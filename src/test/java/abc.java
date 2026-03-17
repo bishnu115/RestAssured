@@ -32,7 +32,6 @@ public class abc {
             if (coursetitles.equalsIgnoreCase("rpa")) {
                 int price = js.get("courses[" + i + "].copies");
                 System.out.println("rpa sold copues:  " +price);
-                System.out.println("test");
                 break;
             }
         }
