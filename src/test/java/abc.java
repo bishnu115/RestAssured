@@ -3,6 +3,8 @@ import org.testng.annotations.Test;
 
 import javax.xml.transform.Source;
 
+import java.sql.SQLOutput;
+
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
@@ -32,6 +34,8 @@ public class abc {
             if (coursetitles.equalsIgnoreCase("rpa")) {
                 int price = js.get("courses[" + i + "].copies");
                 System.out.println("rpa sold copues:  " +price);
+
+                System.out.println("qa changes");
                 break;
             }
         }
