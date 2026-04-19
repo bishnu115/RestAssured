@@ -9,13 +9,13 @@ public class FileUploadDemo {
     @Test
     public void uploadFile() {
 
-        File file = new File("C:\\Users\\ompra\\OneDrive\\Desktop\\postman.xlsx");
-
-        Response res = RestAssured.given()
-                .multiPart("file", file)
-                .when()
-                .post("https://httpbin.org/post");
-
-        res.then().log().all();
+//        File file = new File("C:\\Users\\ompra\\OneDrive\\Desktop\\postman.xlsx");
+//
+//        Response res = RestAssured.given()
+//                .multiPart("file", file)
+//                .when()
+//                .post("https://httpbin.org/post");
+//
+//        res.then().log().all();
     }
 }
